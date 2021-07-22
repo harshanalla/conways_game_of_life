@@ -10,7 +10,7 @@ setup(
     author_email='sriharsha.nalla@outlook.com',
     description='Implementation of Conway\'s game of life, written in python',
     packages=find_packages(exclude=('tests*', 'Tests*')),
-    install_requires = [''],
+    install_requires = ['wheel'],
     entry_points={
         'console_scripts': [
             'game-of-life = game.handler:entry',
