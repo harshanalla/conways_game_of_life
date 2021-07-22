@@ -22,7 +22,7 @@ Requirements
 
 Additional Features
 
-	- The game will let you know if an arrangment was seen before
+	- The game will let you know if an arrangment has occured already.
 
 	- --refresh-rate 500 | Refresh rate (in ms)
 
@@ -36,8 +36,9 @@ Additional Features
 
 Instructions:
 
+    0. Optional: create a virtual environment 
 	1. Clone to local dir
-	2. cd to local dir
+	2. cd to conways_game_of_life
 	3. run pip install .
 	4. game-of-life --show-coordinates
 
