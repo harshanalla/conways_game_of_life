@@ -21,13 +21,6 @@ class Game(object):
             [1 if random() < .50 else 0 for _ in range(self.size)]
             for _ in range(self.size)
         ]
-        self.board = [[0,0,0,0,0,0],
-                      [0, 0, 1, 1, 1, 0],
-                      [0, 0, 0, 0, 0, 0],
-                      [0, 0, 0, 0, 0, 0],
-                      [0, 0, 0, 0, 0, 0],
-                      [0, 0, 0, 0, 0, 0]
-                      ]
         self.seen = dict() # This is used to see if a board has appeared before
         self.cycle = False
 
@@ -160,7 +153,7 @@ def __process_args():
     parser.add_argument('--size', type=int, default=20,
                         help="""Size of the board (nXn)""")
     parser.add_argument('--spawn-rate', type=int, default=100,
-                        help="""Spawn rate of new players after Generation 1 (default 100, guaranteed spawn)""")
+                        help="""Spawn percentage of new players after Generation 1 (default 100, guaranteed spawn)""")
     parser.add_argument('--show-coordinates', type=bool, default=False,
                         help="""The board should have the X axis coordinates along the bottom and Y coordinates along 
                         the left.""")
